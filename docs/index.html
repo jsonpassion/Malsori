@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Malsori — Read Hangul, say it right</title>
+<meta name="description" content="Korean is not read the way it is written: 학교 is said 학꾜. Malsori shows how every word is really pronounced and names the rule behind it, teaches the Hangul letters first if you need them, and carries 6,000 words for TOPIK levels 1 to 6 — all offline." />
+<meta property="og:title" content="Malsori — Read Hangul, say it right" />
+<meta property="og:description" content="학교 is said 학꾜. Every word shows its real sound and the rule behind it, next to the 6,000 words your TOPIK level needs." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://jsonpassion.github.io/Malsori/" />
+<link rel="canonical" href="https://jsonpassion.github.io/Malsori/" />
+<link rel="icon" href="assets/icon-180.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Gowun+Dodum&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#top"><img src="assets/icon-180.png" alt="" />Malsori</a>
+    <div class="nav-links">
+      <a href="#sound">Pronunciation</a>
+      <a href="#how">What's inside</a>
+      <a href="#levels">Levels</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq" class="keep">FAQ</a>
+    </div>
+  </div>
+</nav>
+
+<header class="wrap hero" id="top">
+  <div>
+    <span class="kicker">Hangul · pronunciation · 6,000 TOPIK words</span>
+    <h1>Korean doesn't sound<br />the way it <em>looks</em>.</h1>
+    <p class="sub"><strong>학교</strong> is said <strong>학꾜</strong>. <strong>할아버지</strong> is said <strong>하라버지</strong>. Malsori (말소리, "the sound of speech") shows how every word is really pronounced and names the rule behind it — and starts with the letters if you can't read Hangul yet.</p>
+    <div class="hero-ctas">
+      <span class="btn primary soon" aria-label="Coming soon to the App Store">Coming soon to the App Store</span>
+      <a class="btn" href="#sound">Try the sound engine</a>
+    </div>
+  </div>
+  <div class="hero-card" aria-label="A word card from the app">
+    <span class="cap">Say it today</span>
+    <div class="hero-word" lang="ko">할아버지</div>
+    <div class="chips" lang="ko"><span class="chip">ㅎ ㅏ ㄹ</span><span class="chip">ㅇ ㅏ</span><span class="chip">ㅂ ㅓ</span><span class="chip">ㅈ ㅣ</span></div>
+    <div class="said"><span class="cap">Said</span><b lang="ko">[하라버지]</b><span>Linking</span></div>
+    <div style="font-size: 20px;">grandfather</div>
+  </div>
+</header>
+
+<section id="sound">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Type any Korean word</h2>
+      <p>This is the engine the app runs on every card. It works out the sound right here in your browser — nothing is sent anywhere.</p>
+    </div>
+    <div class="hg-card">
+      <div class="hg-chips" id="hgChips" role="group" aria-label="Example words"></div>
+      <label class="hg-field">
+        <span class="cap">Written</span>
+        <input id="hgInput" type="text" value="할아버지" maxlength="24" autocomplete="off" autocapitalize="off" spellcheck="false" lang="ko" />
+      </label>
+      <div class="said"><span class="cap">Said</span><b id="hgSpoken" lang="ko">[하라버지]</b></div>
+      <div class="hg-rules" id="hgRules"></div>
+      <div>
+        <span class="cap">Letters</span>
+        <div class="hg-letters" id="hgLetters" lang="ko" style="margin-top: 10px;"></div>
+      </div>
+      <p class="hg-note">1,692 of the app's 6,000 words are pronounced differently from the way they are spelled. Those are the ones that trip learners up, and the app marks every one.</p>
+    </div>
+  </div>
+</section>
+
+<section id="how">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>The script and the words, together</h2>
+      <p>Most word apps assume you can already read. Malsori doesn't.</p>
+    </div>
+    <div class="grid3">
+      <div class="card"><div class="glyph" lang="ko">ㄱ</div><h3>Hangul first</h3><p>19 consonants and 21 vowels with their romanization. Press two or three and hear the block they build: ㅎ + ㅏ + ㄴ = 한.</p></div>
+      <div class="card"><div class="glyph" lang="ko">받</div><h3>Seven final sounds</h3><p>There are 27 ways to write a final consonant and only seven sounds. One screen shows which spelling collapses into which.</p></div>
+      <div class="card"><div class="glyph">[ ]</div><h3>The real sound</h3><p>Every card shows how the word is said and names the rule: linking, tensification, nasalization, aspiration and four more.</p></div>
+      <div class="card"><div class="glyph" lang="ko">학</div><h3>Blocks that open</h3><p>Press a syllable in a lesson and it opens into its letters, so a block stops looking like one unreadable glyph.</p></div>
+      <div class="card"><div class="glyph">10</div><h3>Ten words at a time</h3><p>Each word plays itself as it arrives. Swipe right for "Got it", left for "Again" — what you send back comes first next time.</p></div>
+      <div class="card"><div class="glyph">⌁</div><h3>Read aloud, offline</h3><p>Every word, example sentence and English meaning is recorded into the app. Nothing streams; it plays on a plane. (Pre-rendered with AI voice models.)</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="levels">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Six levels, 60 books, 6,000 words</h2>
+      <p>Pick the level you are aiming at. Book 1 of every level is free.</p>
+    </div>
+    <div class="levels">
+      <div class="level"><div class="n">1</div><div><b>Beginner</b><span>TOPIK I · pass 80/200 · survival words</span></div></div>
+      <div class="level"><div class="n">2</div><div><b>Elementary</b><span>TOPIK I · pass 140/200 · daily life</span></div></div>
+      <div class="level"><div class="n">3</div><div><b>Intermediate</b><span>TOPIK II · 120/300 · university admission</span></div></div>
+      <div class="level"><div class="n">4</div><div><b>Upper-Int.</b><span>TOPIK II · 150/300 · news and workplace</span></div></div>
+      <div class="level"><div class="n">5</div><div><b>Advanced</b><span>TOPIK II · 190/300 · academic</span></div></div>
+      <div class="level"><div class="n">6</div><div><b>Mastery</b><span>TOPIK II · 230/300 · near-native reading</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="pricing">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Free to start</h2>
+      <p>Book 1 of every level — 100 words each — and the whole Hangul guide are free, with every feature. One pass opens the other 54 books.</p>
+    </div>
+    <div class="plans">
+      <div class="plan"><b>Monthly</b><div class="price">₩1,900</div><span>Cancel any time</span></div>
+      <div class="plan best"><b>Yearly</b><div class="price">₩7,900</div><span>Best value</span></div>
+      <div class="plan"><b>Lifetime</b><div class="price">₩14,900</div><span>Pay once, keep it</span></div>
+    </div>
+    <p class="fine">Prices shown in Korean won; the App Store shows the price for your country. Subscriptions renew automatically until cancelled in your Apple account settings. No free trial, no ads, no account.</p>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <div class="sec-head"><h2>FAQ</h2></div>
+    <div class="faq">
+      <details><summary>I can't read Hangul at all. Is this for me?</summary><p>Yes. The first screen asks, and if you say no you land on the letters: consonants, vowels, how they stack into a block, and the seven sounds a final consonant can make. Every letter reads itself when pressed.</p></details>
+      <details><summary>How does the app know how a word is pronounced?</summary><p>It applies the automatic rules of Standard Korean Pronunciation to the spelling — the same engine as the demo above. Rules that need grammar to decide are left out on purpose: a wrong reading would teach you an error.</p></details>
+      <details><summary>Is the voice a real person?</summary><p>No. The Korean and English recordings are pre-rendered with AI voice models and bundled in the app, so they play instantly with no internet. Single letters are read by your device's own voice.</p></details>
+      <details><summary>Do I need an account? What do you collect?</summary><p>No account, no ads, no tracking, no analytics. Your progress stays on your device and in your own iCloud. See the <a href="privacy.html">privacy policy</a>.</p></details>
+      <details><summary>Is this an official TOPIK app?</summary><p>No. TOPIK is a registered trademark of the National Institute for International Education (NIIED), Korea. Malsori is independent and not affiliated with or endorsed by NIIED; all content is original and contains no actual test questions.</p></details>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-links">
+      <a href="privacy.html">Privacy policy</a>
+      <a href="terms.html">Terms of service</a>
+      <a href="mailto:forgelab.aitech@gmail.com?subject=%5BMalsori%5D%20Support">Contact</a>
+    </div>
+    <div>© 2026 ForgeLab · Malsori is not affiliated with NIIED. Type: Gowun Batang and Gowun Dodum (SIL Open Font License).</div>
+  </div>
+</footer>
+
+<script src="hangul.js"></script>
+<script>
+(function () {
+  var input = document.getElementById('hgInput');
+  if (!input || !window.Hangul) return;
+  var spoken = document.getElementById('hgSpoken'),
+      rulesBox = document.getElementById('hgRules'),
+      lettersBox = document.getElementById('hgLetters'),
+      chips = document.getElementById('hgChips');
+  var EXAMPLES = ['할아버지', '학교', '좋아요', '국민', '신라', '축하', '같이', '부엌', '중학생'];
+
+  function render() {
+    var text = input.value.trim();
+    var result = window.Hangul.pronounce(text);
+    spoken.textContent = text ? '[' + result.spoken + ']' : '';
+    spoken.classList.toggle('same', !!text && !result.differs);
+    rulesBox.textContent = '';
+    lettersBox.textContent = '';
+    Array.prototype.forEach.call(chips.children, function (c) { c.setAttribute('aria-pressed', c.textContent === text ? 'true' : 'false'); });
+    if (!text) return;
+    if (result.changes.length) {
+      result.changes.forEach(function (key) {
+        var rule = window.Hangul.rules[key], el = document.createElement('span'), b = document.createElement('b');
+        el.className = 'hg-rule'; b.textContent = rule.title;
+        el.appendChild(b); el.appendChild(document.createTextNode(rule.detail));
+        rulesBox.appendChild(el);
+      });
+    } else {
+      var same = document.createElement('span');
+      same.className = 'hg-rule';
+      same.textContent = 'This one is read exactly as it is written.';
+      rulesBox.appendChild(same);
+    }
+    window.Hangul.letters(text).forEach(function (block) {
+      var el = document.createElement('span');
+      el.className = 'hg-block';
+      el.textContent = [block.initial, block.medial, block.final].filter(Boolean).join(' ');
+      lettersBox.appendChild(el);
+    });
+  }
+
+  EXAMPLES.forEach(function (word) {
+    var b = document.createElement('button');
+    b.type = 'button'; b.className = 'hg-chip'; b.lang = 'ko'; b.textContent = word;
+    b.addEventListener('click', function () { input.value = word; render(); });
+    chips.appendChild(b);
+  });
+  input.addEventListener('input', render);
+  render();
+})();
+</script>
+</body>
+</html>
