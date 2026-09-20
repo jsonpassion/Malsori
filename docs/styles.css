@@ -163,3 +163,18 @@ footer .wrap { display: flex; flex-direction: column; gap: 14px; }
   .doc { padding: 24px 16px 64px; }
   .doc .sheet { padding: 24px 20px; }
 }
+
+
+/* The two friends, under the hero: the vowel and the consonant the app is named after. */
+.friends-line {
+  grid-column: 1 / -1;
+  display: flex; align-items: center; gap: 18px;
+  margin: 26px 0 0; padding: 16px 20px;
+  border-radius: 20px; background: var(--light, #FFFAF1);
+  box-shadow: 6px 6px 14px rgba(120, 104, 80, .16), -6px -6px 14px rgba(255, 253, 248, .9);
+  font-size: 15px; line-height: 1.55;
+}
+.friends-line .friends { width: 118px; height: 72px; flex: none; }
+@media (max-width: 640px) {
+  .friends-line { flex-direction: column; align-items: flex-start; gap: 12px; }
+}
