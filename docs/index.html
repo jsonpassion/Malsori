@@ -47,50 +47,7 @@
     <div class="said"><span class="cap">Said</span><b lang="ko">[하라버지]</b><span>Linking</span></div>
     <div style="font-size: 20px;">grandfather</div>
   </div>
-  <p class="friends-line"><svg class="friends" viewBox="0 0 150 92" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
-  <g fill="none" stroke="#1E1A16" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
-    <!-- 소리: the consonant ㅇ, with ㅅ growing out of the top -->
-    <path d="M44 14 L33 27 M44 14 Q54 20 56 25" />
-    <circle cx="44" cy="52" r="29" fill="#B3CBE0" />
-    <g fill="#1E1A16" stroke="none">
-      <ellipse cx="45" cy="86" rx="5" ry="2.6" /><ellipse cx="33" cy="86" rx="5" ry="2.6" />
-    </g>
-    <!-- eyes, brows and the star: the family signature -->
-    <g>
-      <ellipse cx="35" cy="50" rx="6.6" ry="8.6" fill="#FFFDF8" />
-      <ellipse cx="53" cy="50" rx="6.6" ry="8.6" fill="#FFFDF8" />
-      <g fill="#1E1A16" stroke="none">
-        <ellipse cx="36.8" cy="52.6" rx="2.9" ry="3.8" /><ellipse cx="54.8" cy="52.6" rx="2.9" ry="3.8" />
-        <circle cx="35.9" cy="51.0" r="1.0" fill="#FFFDF8" /><circle cx="53.9" cy="51.0" r="1.0" fill="#FFFDF8" />
-      </g>
-      <path d="M30 39 Q35 35.4 40 39" stroke-width="2.4" />
-      <path d="M48 39 Q53 35.4 58 39" stroke-width="2.4" />
-      <path d="M61.5 36 L63 39.6 L66.6 41.1 L63 42.6 L61.5 46.2 L60 42.6 L56.4 41.1 L60 39.6 Z"
-            fill="#1E1A16" stroke="none" />
-    </g>
-    <path d="M38 65 Q44 71 50 65" stroke-width="2.6" />
-
-    <!-- 말이: the vowel ㅏ — a standing stroke with one arm -->
-    <rect x="95" y="16" width="34" height="66" rx="17" fill="#F2CDA4" />
-    <rect x="129" y="55" width="17" height="8" rx="4" fill="#F2CDA4" />
-    <g fill="#1E1A16" stroke="none">
-      <ellipse cx="105" cy="86" rx="5" ry="2.6" /><ellipse cx="119" cy="86" rx="5" ry="2.6" />
-    </g>
-    <g>
-      <ellipse cx="105" cy="42" rx="5.6" ry="7.4" fill="#FFFDF8" />
-      <ellipse cx="119" cy="42" rx="5.6" ry="7.4" fill="#FFFDF8" />
-      <g fill="#1E1A16" stroke="none">
-        <ellipse cx="106.5" cy="44.2" rx="2.5" ry="3.3" /><ellipse cx="120.5" cy="44.2" rx="2.5" ry="3.3" />
-        <circle cx="105.7" cy="42.8" r="0.9" fill="#FFFDF8" /><circle cx="119.7" cy="42.8" r="0.9" fill="#FFFDF8" />
-      </g>
-      <path d="M100.6 32.6 Q105 29.4 109.4 32.6" stroke-width="2.2" />
-      <path d="M114.6 32.6 Q119 29.4 123.4 32.6" stroke-width="2.2" />
-      <path d="M126 29.5 L127.3 32.6 L130.4 33.9 L127.3 35.2 L126 38.3 L124.7 35.2 L121.6 33.9 L124.7 32.6 Z"
-            fill="#1E1A16" stroke="none" />
-    </g>
-    <path d="M108 55 Q112 60 116 55" stroke-width="2.4" />
-  </g>
-</svg>
+  <p class="friends-line"><img class="friends" src="assets/friend-welcome.webp" width="157" height="120" alt="" />
     <span>Meet <b lang="ko">말이</b> and <b lang="ko">소리</b> — the vowel ㅏ and the consonant ㅇ. Their names together make the app&rsquo;s, and side by side they read <b lang="ko">아</b>.</span>
   </p>
 </header>
@@ -101,7 +58,8 @@
       <h2>Type any Korean word</h2>
       <p>This is the engine the app runs on every card. It works out the sound right here in your browser — nothing is sent anywhere.</p>
     </div>
-    <div class="hg-card">
+    <div class="hg-card perched">
+      <img class="perch" src="assets/friend-speak.webp" width="105" height="96" alt="" loading="lazy" />
       <div class="hg-chips" id="hgChips" role="group" aria-label="Example words"></div>
       <label class="hg-field">
         <span class="cap">Written</span>
@@ -121,6 +79,7 @@
 <section id="how">
   <div class="wrap">
     <div class="sec-head">
+      <img class="friend" src="assets/friend-build.webp" width="133" height="108" alt="" loading="lazy" />
       <h2>The script and the words, together</h2>
       <p>Most word apps assume you can already read. Malsori doesn't.</p>
     </div>
@@ -139,6 +98,7 @@
 <section id="levels">
   <div class="wrap">
     <div class="sec-head">
+      <img class="friend" src="assets/friend-steps.webp" width="136" height="104" alt="" loading="lazy" />
       <h2>Six levels, 60 books, 6,000 words</h2>
       <p>Pick the level you are aiming at. Book 1 of every level is free.</p>
     </div>
@@ -161,7 +121,7 @@
     </div>
     <div class="plans">
       <div class="plan"><b>Monthly</b><div class="price">₩1,900</div><span>Cancel any time</span></div>
-      <div class="plan best"><b>Yearly</b><div class="price">₩7,900</div><span>Best value</span></div>
+      <div class="plan best perched"><img class="perch" src="assets/friend-key.webp" width="101" height="100" alt="" loading="lazy" /><b>Yearly</b><div class="price">₩7,900</div><span>Best value</span></div>
       <div class="plan"><b>Lifetime</b><div class="price">₩14,900</div><span>Pay once, keep it</span></div>
     </div>
     <p class="fine">Prices shown in Korean won; the App Store shows the price for your country. Subscriptions renew automatically until cancelled in your Apple account settings. No free trial, no ads, no account.</p>
@@ -170,7 +130,10 @@
 
 <section id="faq">
   <div class="wrap">
-    <div class="sec-head"><h2>FAQ</h2></div>
+    <div class="sec-head">
+      <img class="friend" src="assets/friend-read.webp" width="121" height="104" alt="" loading="lazy" />
+      <h2>FAQ</h2>
+    </div>
     <div class="faq">
       <details><summary>I can't read Hangul at all. Is this for me?</summary><p>Yes. The first screen asks, and if you say no you land on the letters: consonants, vowels, how they stack into a block, and the seven sounds a final consonant can make. Every letter reads itself when pressed.</p></details>
       <details><summary>How does the app know how a word is pronounced?</summary><p>It applies the automatic rules of Standard Korean Pronunciation to the spelling — the same engine as the demo above. Rules that need grammar to decide are left out on purpose: a wrong reading would teach you an error.</p></details>
@@ -185,6 +148,7 @@
 
 <footer>
   <div class="wrap">
+    <img class="peek" src="assets/friend-peek.webp" width="128" height="64" alt="" loading="lazy" />
     <div class="foot-links">
       <a href="privacy.html">Privacy policy</a>
       <a href="terms.html">Terms of service</a>

@@ -174,7 +174,26 @@ footer .wrap { display: flex; flex-direction: column; gap: 14px; }
   box-shadow: 6px 6px 14px rgba(120, 104, 80, .16), -6px -6px 14px rgba(255, 253, 248, .9);
   font-size: 15px; line-height: 1.55;
 }
-.friends-line .friends { width: 118px; height: 72px; flex: none; }
+.friends-line .friends { width: 157px; height: 120px; flex: none; margin: -34px 0 -8px -6px; }
 @media (max-width: 640px) {
   .friends-line { flex-direction: column; align-items: flex-start; gap: 12px; }
+}
+
+/* The friends elsewhere on the page, the way the app places them: over a section's title, or
+   sitting on the edge of a card with their feet on it. Soft-felt art, so no shadow of their own. */
+.sec-head .friend { display: block; margin: 0 auto 6px; height: auto; max-width: 42vw; }
+.perched { position: relative; }
+.perch { position: absolute; bottom: calc(100% - 10px); right: 26px; pointer-events: none; }
+.hg-card.perched { margin-top: 104px; }       /* margins collapse: this is the whole gap */
+.plans:has(.perched) { margin-top: 116px; }
+.plan.perched .perch { right: 50%; transform: translateX(50%); }
+footer .wrap { position: relative; padding-top: 22px; box-shadow: 0 -1px 0 var(--shade); }
+footer .peek { position: absolute; bottom: 100%; right: 24px; pointer-events: none; }
+@media (max-width: 860px) {
+  /* One column: the key sits on the Yearly card where it falls in the stack. */
+  .plans:has(.perched) { margin-top: 0; }
+  .plan.perched { margin-top: 74px; }
+}
+@media (max-width: 640px) {
+  .friends-line .friends { margin: -44px 0 0; }
 }
